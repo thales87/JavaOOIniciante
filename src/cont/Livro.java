@@ -2,11 +2,11 @@ package cont;
 
 public class Livro {
 
-	String nome;
-	String descricao;
-	double valor;
-	String isbn;
-	Autor autor;
+	private String nome;
+	private String descricao;
+	private double valor;
+	private String isbn;
+	private Autor autor;
 	
 	void mostrarDetalhes() {
 		System.out.println("Dados do Livro:");
@@ -20,11 +20,58 @@ public class Livro {
 		System.out.println("--");
 	}
 	
-	void aplicaDescontoDe(double percentual) {
-		this.valor -= this.valor*percentual; 
+	public boolean aplicaDescontoDe(double percentual) {
+		if(percentual > 0.3) {
+			return false;
+		}
+		
+		this.valor -= this.valor*percentual;
+		return true;
 	}
 	
 	boolean temAutor() {
 		return this.autor != null;
 	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+
+	public String getIsbn() {
+		return isbn;
+	}
+
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+
+	public Autor getAutor() {
+		return autor;
+	}
+
+	public void setAutor(Autor autor) {
+		this.autor = autor;
+	}
+	
+	
 }
