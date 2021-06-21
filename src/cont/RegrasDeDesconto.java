@@ -3,7 +3,12 @@ package cont;
 public class RegrasDeDesconto {
 
 	public static void main(String[] args) {
-		Livro livro = new Livro();
+		Autor autor = new Autor();
+		autor.setNome("Joshua Bloch");
+		autor.setCpf("123.456.789-09");
+		autor.setEmail("autor@gmail.com");
+		
+		Livro livro = new Livro(autor);
 		livro.setValor(100);
 		
 		if(!livro.aplicaDescontoDe(0.2)) {
