@@ -24,8 +24,6 @@ public class RegistroDeVendas {
 		carrinho.adiciona(ebook);
 		
 		System.out.println(carrinho.getTotal());
-		
-		
 	}
 	
 }

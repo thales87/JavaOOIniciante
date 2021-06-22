@@ -6,8 +6,4 @@ public class MiniLivro extends Livro{
 		super(autor);
 	}
 	
-	public boolean aplicaDescontoDe(double porcentagem) {
-		return false;
-	}
-
 }
