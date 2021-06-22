@@ -1,9 +1,9 @@
 package main;
 
-import cont.Autor;
-import cont.Ebook;
-import cont.Livro;
-import cont.LivroFisico;
+import cont.livraria.Autor;
+import cont.produtos.Ebook;
+import cont.produtos.Livro;
+import cont.produtos.LivroFisico;
 
 public class CadastroDeLivros {
 

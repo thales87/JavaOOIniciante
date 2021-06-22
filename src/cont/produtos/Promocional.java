@@ -1,4 +1,4 @@
-package cont;
+package cont.produtos;
 
 @FunctionalInterface
 public interface Promocional {

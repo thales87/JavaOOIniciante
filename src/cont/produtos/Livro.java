@@ -1,4 +1,6 @@
-package cont;
+package cont.produtos;
+
+import cont.livraria.Autor;
 
 public abstract class Livro implements Produto{
 

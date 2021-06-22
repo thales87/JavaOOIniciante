@@ -1,4 +1,4 @@
-package cont;
+package cont.livraria;
 
 public class Autor {
 
@@ -6,7 +6,7 @@ public class Autor {
 	private String email;
 	private String cpf;
 	
-	void mostrarDetalhes() {
+	public void mostrarDetalhes() {
 		System.out.println("Dados do Autor:");
 		System.out.println("Nome: " + nome);
 		System.out.println("Email: " + email);

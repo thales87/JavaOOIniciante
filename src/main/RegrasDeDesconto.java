@@ -1,8 +1,8 @@
 package main;
 
-import cont.Autor;
-import cont.Ebook;
-import cont.LivroFisico;
+import cont.livraria.Autor;
+import cont.produtos.Ebook;
+import cont.produtos.LivroFisico;
 
 public class RegrasDeDesconto {
 

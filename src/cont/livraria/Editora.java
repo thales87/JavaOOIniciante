@@ -1,4 +1,4 @@
-package cont;
+package cont.livraria;
 
 public class Editora {
 

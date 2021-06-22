@@ -1,5 +1,7 @@
 package cont;
 
+import cont.produtos.Produto;
+
 public class CarrinhoDeCompras {
 
 	private double total;
