@@ -29,7 +29,7 @@ public class Livro {
 		if(percentual > 0.3) {
 			return false;
 		}
-		
+		System.out.println("Aplicando desconto de " + percentual + " no livro "+ this.nome);
 		this.valor -= this.valor*percentual;
 		return true;
 	}
