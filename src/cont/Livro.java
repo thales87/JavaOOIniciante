@@ -1,6 +1,6 @@
 package cont;
 
-public class Livro {
+public abstract class Livro {
 
 	private String nome;
 	private String descricao;
@@ -13,7 +13,7 @@ public class Livro {
 		this.isbn = "000-00-00000-00-0";
 	}
 	
-	void mostrarDetalhes() {
+	public void mostrarDetalhes() {
 		System.out.println("Dados do Livro:");
 		System.out.println("Nome:" + nome);
 		System.out.println("Descrição:" + descricao);
@@ -25,14 +25,7 @@ public class Livro {
 		System.out.println("--");
 	}
 	
-	public boolean aplicaDescontoDe(double percentual) {
-		if(percentual > 0.3) {
-			return false;
-		}
-		System.out.println("Aplicando desconto de " + percentual + " no livro "+ this.nome);
-		this.valor -= this.valor*percentual;
-		return true;
-	}
+	public abstract boolean aplicaDescontoDe(double percentual);
 	
 	boolean temAutor() {
 		return this.autor != null;

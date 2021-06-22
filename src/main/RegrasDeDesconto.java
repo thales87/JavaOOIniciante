@@ -1,4 +1,9 @@
-package cont;
+package main;
+
+import cont.Autor;
+import cont.Ebook;
+import cont.Livro;
+import cont.MiniLivro;
 
 public class RegrasDeDesconto {
 
@@ -8,7 +13,7 @@ public class RegrasDeDesconto {
 		autor.setCpf("123.456.789-09");
 		autor.setEmail("autor@gmail.com");
 		
-		Livro livro = new Livro(autor);
+		Livro livro = new MiniLivro(autor);
 		livro.setValor(100);
 		
 		if(!livro.aplicaDescontoDe(0.2)) {

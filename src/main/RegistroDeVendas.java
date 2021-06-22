@@ -1,4 +1,9 @@
-package cont;
+package main;
+
+import cont.Autor;
+import cont.CarrinhoDeCompras;
+import cont.Ebook;
+import cont.LivroFisico;
 
 public class RegistroDeVendas {
 

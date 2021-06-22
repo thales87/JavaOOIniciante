@@ -1,4 +1,9 @@
-package cont;
+package main;
+
+import cont.Autor;
+import cont.Ebook;
+import cont.Livro;
+import cont.LivroFisico;
 
 public class CadastroDeLivros {
 
@@ -8,7 +13,7 @@ public class CadastroDeLivros {
 		autor.setCpf("123.456.789-09");
 		autor.setEmail("autor@gmail.com");
 
-		Livro livro = new Livro(autor);
+		Livro livro = new LivroFisico(autor);
 		livro.setNome("Java Efetivo");
 		livro.setDescricao("Melhores práticas no java");
 		livro.setValor(49.9);
@@ -21,10 +26,10 @@ public class CadastroDeLivros {
 		outroAutor.setCpf("000.111.222-33"); 
 		outroAutor.setEmail("bart@useacabeca.com");
 		  
-		Livro outroLivro = new Livro(outroAutor);
+		Livro outroLivro = new Ebook(outroAutor);
 		outroLivro.setNome("Use a cabeça Java");
 		outroLivro.setDescricao("Introdução ao Java");
-		outroLivro.setValor(89.9);
+		outroLivro.setValor(29.9);
 		outroLivro.setIsbn("000-999-888");
 		 
 		outroLivro.mostrarDetalhes();

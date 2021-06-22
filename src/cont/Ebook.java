@@ -8,11 +8,12 @@ public class Ebook extends Livro{
 		super(autor);
 	}
 	
-	public boolean aplicaDescontoDe(double percentual) {
-		if(percentual > 0.15) {
+	public boolean aplicaDescontoDe(double porcentagem) {
+		if(porcentagem > 0.15) {
 			return false;
 		}
-		double desconto = this.getValor() * percentual;
+		System.out.println("Aplicando desconto de " + porcentagem + " no Ebook "+ getNome());
+		double desconto = this.getValor() * porcentagem;
 		this.setValor(this.getValor() - desconto);
 		return true;
 	}
